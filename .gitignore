@@ -45,3 +45,14 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+GccApplication1/Debug/Makefile
+*.o
+GccApplication1/Debug/main.d
+*.eep
+GccApplication1/Debug/GccApplication1.elf
+*.hex
+*.lss
+GccApplication1/Debug/GccApplication1.map
+*.srec
+GccApplication1/Debug/ILib/io.d
+*.mk

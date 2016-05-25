@@ -13,6 +13,8 @@
 int main(void)
 {
 	USART_Init();
+	timer0_init();
+	timer1_init();
 	KeyButtonInit();
     /* Replace with your application code */
 	iprintf("hello%d",10);
@@ -23,12 +25,12 @@ int main(void)
 
 ISR(INT1_vect)
 {
-	cli();
+	// cli();
 	for (int i = 0; i <= 0xFF; i++)
 	{
 		USART_Transmit(i);
 	}
-	sei();
+	// sei();
 }
 void KeyButtonInit() {
 	MCUCR |= (0 << ISC10) | (1 << ISC11);
